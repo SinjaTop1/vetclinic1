@@ -1,0 +1,101 @@
+---
+// Opening Hours component
+---
+
+<section id="hours" class="py-20 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Section header -->
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4" data-translate="hours-title">
+        Unsere Ordinationszeiten
+      </h2>
+      <p class="text-lg text-vet-green font-medium mb-6" data-translate="hours-notice">
+        Aufgrund der herrschenden Umstände sind ab sofort Ordinationsbesuche nur nach vorheriger Terminvereinbarung möglich!
+      </p>
+      <p class="text-gray-600 max-w-2xl mx-auto" data-translate="hours-subtitle">
+        Termine und Terminvereinbarung zu folgenden Zeiten:
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+      <!-- Opening Hours -->
+      <div class="bg-white rounded-2xl shadow-lg p-8">
+        <h3 class="text-2xl font-semibold text-gray-900 mb-8 text-center" data-translate="hours-schedule-title">Öffnungszeiten</h3>
+        
+        <div class="space-y-4">
+          <div class="flex justify-between items-center py-3 border-b border-gray-100">
+            <span class="font-medium text-gray-900" data-translate="hours-monday">Montag</span>
+            <span class="text-vet-green font-medium">9:30 – 12:30 & 15:30 – 19:00 Uhr</span>
+          </div>
+          
+          <div class="flex justify-between items-center py-3 border-b border-gray-100">
+            <span class="font-medium text-gray-900" data-translate="hours-tuesday">Dienstag</span>
+            <span class="text-vet-green font-medium">9:30 – 12:30 & 15:30 – 19:00 Uhr</span>
+          </div>
+          
+          <div class="flex justify-between items-center py-3 border-b border-gray-100">
+            <span class="font-medium text-gray-900" data-translate="hours-wednesday">Mittwoch</span>
+            <span class="text-vet-green font-medium">15:30 – 19:00 Uhr</span>
+          </div>
+          
+          <div class="flex justify-between items-center py-3 border-b border-gray-100">
+            <span class="font-medium text-gray-900" data-translate="hours-thursday">Donnerstag</span>
+            <span class="text-vet-green font-medium">9:30 – 12:30 & 15:30 – 19:00 Uhr</span>
+          </div>
+          
+          <div class="flex justify-between items-center py-3">
+            <span class="font-medium text-gray-900" data-translate="hours-friday">Freitag</span>
+            <span class="text-vet-green font-medium">9:30 – 12:30 & 15:30 – 19:00 Uhr</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Benefits -->
+      <div class="bg-white rounded-2xl shadow-lg p-8">
+        <h3 class="text-2xl font-semibold text-gray-900 mb-8 text-center" data-translate="hours-benefits-title">Ihr Vorteil</h3>
+        
+        <div class="space-y-6">
+          <div class="flex items-start space-x-4">
+            <div class="flex-shrink-0 w-12 h-12 bg-vet-green rounded-full flex items-center justify-center">
+              <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+              </svg>
+            </div>
+            <div>
+              <h4 class="text-lg font-semibold text-gray-900 mb-2" data-translate="hours-benefit1-title">Persönliche Sicherheit</h4>
+              <p class="text-gray-600" data-translate="hours-benefit1-desc">
+                Durch die neue Regelung reduzieren wir die Kontaktmöglichkeit mit anderen Patienten und erhöhen dadurch Ihre persönliche Sicherheit.
+              </p>
+            </div>
+          </div>
+          
+          <div class="flex items-start space-x-4">
+            <div class="flex-shrink-0 w-12 h-12 bg-vet-green rounded-full flex items-center justify-center">
+              <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zM12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+              </svg>
+            </div>
+            <div>
+              <h4 class="text-lg font-semibold text-gray-900 mb-2" data-translate="hours-benefit2-title">Keine Wartezeiten</h4>
+              <p class="text-gray-600" data-translate="hours-benefit2-desc">
+                Zudem haben Sie keine Wartezeiten und wir können uns optimal auf Ihren Liebling einstellen.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- CTA Button -->
+        <div class="mt-8 text-center">
+          <button 
+            class="inline-flex items-center justify-center px-8 py-4 bg-vet-green text-white font-semibold rounded-xl hover:bg-vet-green-dark transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
+          >
+            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/>
+            </svg>
+<span data-translate="hours-cta">Jetzt Termin vereinbaren</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

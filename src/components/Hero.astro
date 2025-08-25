@@ -1,0 +1,68 @@
+---
+// Hero section component
+---
+
+<section id="home" class="relative bg-gradient-to-br from-vet-green to-vet-green-dark text-white overflow-hidden">
+  <!-- Decorative animal icons background -->
+  <div class="absolute inset-0 opacity-10">
+    <div class="flex flex-wrap justify-center items-center h-full space-x-4">
+      <!-- Animal icons pattern -->
+      <div class="text-6xl animate-pulse">🐕</div>
+      <div class="text-6xl animate-pulse delay-100">🐱</div>
+      <div class="text-6xl animate-pulse delay-200">🐰</div>
+      <div class="text-6xl animate-pulse delay-300">🐹</div>
+      <div class="text-6xl animate-pulse delay-400">🐦</div>
+    </div>
+  </div>
+
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
+    <div class="text-center">
+      <!-- Main heading -->
+      <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight" data-translate="hero-title">
+        Tierarzt am Spittelberg
+      </h1>
+      
+      <!-- Doctors -->
+      <div class="text-xl md:text-2xl mb-4 space-y-1">
+        <p class="font-medium" data-translate="hero-doctor1">Dipl. Tierarzt Peter Rippel</p>
+        <p class="font-medium" data-translate="hero-doctor2">Dr. Bettina Rippel-Rachlé</p>
+      </div>
+
+      <!-- Services -->
+      <p class="text-lg md:text-xl mb-12 text-green-100 max-w-4xl mx-auto" data-translate="hero-services">
+        Röntgen | Ultraschall | Chirurgie | Laser | Endoskopie | Labor | Ganzheitliche Medizin
+      </p>
+
+      <!-- Online Booking Button - Large and prominent -->
+      <div class="mb-12">
+        <button 
+          id="booking-button"
+          class="group relative inline-flex items-center justify-center px-12 py-6 text-xl font-semibold text-vet-green bg-white rounded-2xl shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300 ease-out hover:bg-gray-50 focus:outline-none focus:ring-4 focus:ring-white/30"
+        >
+          <svg class="w-8 h-8 mr-4 group-hover:animate-pulse" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/>
+          </svg>
+          <span data-translate="hero-booking-btn">Online Termin buchen</span>
+          <div class="absolute inset-0 rounded-2xl bg-gradient-to-r from-vet-green-light/20 to-vet-green/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        </button>
+      </div>
+
+
+    </div>
+  </div>
+
+  <!-- Decorative wave at bottom -->
+  <div class="absolute bottom-0 left-0 right-0">
+    <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 120L60 110C120 100 240 80 360 70C480 60 600 60 720 65C840 70 960 80 1080 85C1200 90 1320 90 1380 90L1440 90V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" fill="white"/>
+    </svg>
+  </div>
+</section>
+
+<script>
+  // Add click handler for booking button
+  document.getElementById('booking-button')?.addEventListener('click', function() {
+    // Placeholder for Calendly integration
+    alert('Hier wird später die Calendly-Integration eingebunden!');
+  });
+</script>

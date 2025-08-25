@@ -1,0 +1,116 @@
+---
+// Contact and Location component
+---
+
+<section id="contact" class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Section header -->
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4" data-translate="contact-title">
+        Unser Standort
+      </h2>
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto" data-translate="contact-subtitle">
+        Besuchen Sie uns in der Siebensterngasse im Herzen von Wien
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+      <!-- Contact Information -->
+      <div class="space-y-8">
+        <!-- Address -->
+        <div class="bg-gray-50 rounded-2xl p-8">
+          <div class="flex items-start space-x-4">
+            <div class="flex-shrink-0 w-12 h-12 bg-vet-green rounded-full flex items-center justify-center">
+              <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-2" data-translate="contact-address-title">Adresse</h3>
+              <p class="text-gray-700 text-lg">
+                Siebensterngasse 22<br>
+                Ecke Sigmundsgasse<br>
+                1070 Wien
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Phone -->
+        <div class="bg-gray-50 rounded-2xl p-8">
+          <div class="flex items-start space-x-4">
+            <div class="flex-shrink-0 w-12 h-12 bg-vet-green rounded-full flex items-center justify-center">
+              <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-2" data-translate="contact-phone-title">Telefon</h3>
+              <p class="text-gray-700 text-lg">
+                <a href="tel:+4319690980" class="hover:text-vet-green transition-colors">
+                  (01) 96 90 980
+                </a>
+              </p>
+              <p class="text-gray-600 text-sm mt-1">
+                Fax: (01) 96 90 981
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Email -->
+        <div class="bg-gray-50 rounded-2xl p-8">
+          <div class="flex items-start space-x-4">
+            <div class="flex-shrink-0 w-12 h-12 bg-vet-green rounded-full flex items-center justify-center">
+              <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-2" data-translate="contact-email-title">E-Mail</h3>
+              <p class="text-gray-700 text-lg">
+                <a href="mailto:ordination@rippel.at" class="hover:text-vet-green transition-colors">
+                  ordination@rippel.at
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Map Placeholder -->
+      <div class="bg-gray-100 rounded-2xl overflow-hidden shadow-lg">
+        <div class="aspect-w-16 aspect-h-12 bg-gradient-to-br from-vet-green-light to-vet-green flex items-center justify-center min-h-[400px]">
+          <div class="text-center text-white">
+            <svg class="w-16 h-16 mx-auto mb-4 opacity-80" fill="currentColor" viewBox="0 0 24 24">
+              <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+            </svg>
+            <h3 class="text-xl font-semibold mb-2">Karte wird geladen...</h3>
+            <p class="text-green-100">
+              Siebensterngasse 22, 1070 Wien
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Additional CTA -->
+    <div class="mt-16 text-center">
+      <div class="bg-gradient-to-r from-vet-green to-vet-green-dark rounded-2xl p-8 text-white">
+        <h3 class="text-2xl font-bold mb-4" data-translate="contact-cta-title">Bereit für einen Termin?</h3>
+        <p class="text-lg mb-6 text-green-100" data-translate="contact-cta-subtitle">
+          Vereinbaren Sie noch heute einen Termin für Ihren Liebling
+        </p>
+        <button 
+          class="inline-flex items-center justify-center px-8 py-4 bg-white text-vet-green font-semibold rounded-xl hover:bg-gray-50 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
+        >
+          <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/>
+          </svg>
+<span data-translate="contact-cta-btn">Online Termin buchen</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>

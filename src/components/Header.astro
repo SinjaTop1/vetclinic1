@@ -1,0 +1,76 @@
+---
+// Header component
+---
+
+<header class="bg-white shadow-sm border-b border-gray-100 sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center py-4">
+      <!-- Logo and clinic name -->
+      <div class="flex items-center space-x-3">
+        <div class="w-12 h-12 bg-vet-green rounded-full flex items-center justify-center">
+          <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+          </svg>
+        </div>
+        <div>
+          <h1 class="text-xl font-semibold text-gray-900">Tierarzt am Spittelberg</h1>
+          <p class="text-sm text-gray-600">www.rippel.at</p>
+        </div>
+      </div>
+
+      <!-- Navigation -->
+      <nav class="hidden md:flex items-center space-x-8">
+        <a href="#home" class="text-gray-700 hover:text-vet-green transition-colors font-medium" data-de="Home" data-en="Home">Home</a>
+        <a href="#services" class="text-gray-700 hover:text-vet-green transition-colors font-medium" data-de="Leistungen" data-en="Services">Leistungen</a>
+        <a href="#hours" class="text-gray-700 hover:text-vet-green transition-colors font-medium" data-de="Öffnungszeiten" data-en="Opening Hours">Öffnungszeiten</a>
+        <a href="#contact" class="text-gray-700 hover:text-vet-green transition-colors font-medium" data-de="Kontakt" data-en="Contact">Kontakt</a>
+        
+        <!-- Language Toggle -->
+        <div class="flex items-center space-x-2 ml-4 border-l border-gray-200 pl-4">
+          <button 
+            id="lang-de" 
+            class="px-3 py-1 text-sm font-medium rounded-md transition-colors language-btn active"
+            data-lang="de"
+          >
+            DE
+          </button>
+          <button 
+            id="lang-en" 
+            class="px-3 py-1 text-sm font-medium rounded-md transition-colors language-btn"
+            data-lang="en"
+          >
+            EN
+          </button>
+        </div>
+      </nav>
+
+      <!-- Mobile language toggle and menu -->
+      <div class="md:hidden flex items-center space-x-2">
+        <!-- Mobile Language Toggle -->
+        <div class="flex items-center space-x-1">
+          <button 
+            id="mobile-lang-de" 
+            class="px-2 py-1 text-sm font-medium rounded-md transition-colors language-btn active"
+            data-lang="de"
+          >
+            DE
+          </button>
+          <button 
+            id="mobile-lang-en" 
+            class="px-2 py-1 text-sm font-medium rounded-md transition-colors language-btn"
+            data-lang="en"
+          >
+            EN
+          </button>
+        </div>
+        
+        <!-- Mobile menu button -->
+        <button class="p-2 rounded-md text-gray-700 hover:text-vet-green hover:bg-gray-100 transition-colors">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
