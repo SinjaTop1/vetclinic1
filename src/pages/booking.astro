@@ -1,0 +1,107 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Online Termin buchen - Tierarzt am Spittelberg" description="Buchen Sie online einen Termin bei Tierarzt am Spittelberg. Einfach und bequem über unser Buchungssystem.">
+  <Header />
+  <main>
+    <!-- Booking Hero Section -->
+    <section class="bg-gradient-to-br from-vet-green to-vet-green-dark text-white py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold mb-6" data-translate="booking-title">
+          Online Termin buchen
+        </h1>
+        <p class="text-xl mb-8 text-green-100 max-w-3xl mx-auto" data-translate="booking-subtitle">
+          Wählen Sie einen passenden Termin für Ihren Liebling. Wir freuen uns auf Ihren Besuch!
+        </p>
+      </div>
+    </section>
+
+    <!-- Calendly Integration Section -->
+    <section class="py-16 bg-gray-50">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
+          <div class="p-8">
+            <div class="text-center mb-8">
+              <h2 class="text-2xl font-semibold text-gray-900 mb-4" data-translate="booking-select-time">
+                Wählen Sie Ihren Wunschtermin
+              </h2>
+              <p class="text-gray-600" data-translate="booking-instructions">
+                Klicken Sie auf einen verfügbaren Zeitslot, um Ihren Termin zu buchen.
+              </p>
+            </div>
+            
+            <!-- Calendly inline widget begin -->
+            <div class="calendly-inline-widget" data-url="https://calendly.com/nextserveagency/30min" style="min-width:320px;height:700px;"></div>
+            <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+            <!-- Calendly inline widget end -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Info Section -->
+    <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4" data-translate="booking-contact-title">
+            Fragen zum Termin?
+          </h2>
+          <p class="text-lg text-gray-600 mb-8" data-translate="booking-contact-subtitle">
+            Kontaktieren Sie uns gerne direkt
+          </p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Phone -->
+          <div class="text-center">
+            <div class="w-16 h-16 bg-vet-green rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+              </svg>
+            </div>
+            <h3 class="text-lg font-semibold text-gray-900 mb-2" data-translate="contact-phone-title">Telefon</h3>
+            <p class="text-gray-600">
+              <a href="tel:+4319690980" class="hover:text-vet-green transition-colors">
+                (01) 96 90 980
+              </a>
+            </p>
+          </div>
+
+          <!-- Email -->
+          <div class="text-center">
+            <div class="w-16 h-16 bg-vet-green rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+              </svg>
+            </div>
+            <h3 class="text-lg font-semibold text-gray-900 mb-2" data-translate="contact-email-title">E-Mail</h3>
+            <p class="text-gray-600">
+              <a href="mailto:ordination@rippel.at" class="hover:text-vet-green transition-colors">
+                ordination@rippel.at
+              </a>
+            </p>
+          </div>
+
+          <!-- Address -->
+          <div class="text-center">
+            <div class="w-16 h-16 bg-vet-green rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+              </svg>
+            </div>
+            <h3 class="text-lg font-semibold text-gray-900 mb-2" data-translate="contact-address-title">Adresse</h3>
+            <p class="text-gray-600">
+              Siebensterngasse 22<br>
+              1070 Wien
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout>

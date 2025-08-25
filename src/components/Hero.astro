@@ -35,8 +35,8 @@
 
       <!-- Online Booking Button - Large and prominent -->
       <div class="mb-12">
-        <button 
-          id="booking-button"
+        <a 
+          href="/booking"
           class="group relative inline-flex items-center justify-center px-12 py-6 text-xl font-semibold text-vet-green bg-white rounded-2xl shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300 ease-out hover:bg-gray-50 focus:outline-none focus:ring-4 focus:ring-white/30"
         >
           <svg class="w-8 h-8 mr-4 group-hover:animate-pulse" fill="currentColor" viewBox="0 0 24 24">
@@ -44,7 +44,7 @@
           </svg>
           <span data-translate="hero-booking-btn">Online Termin buchen</span>
           <div class="absolute inset-0 rounded-2xl bg-gradient-to-r from-vet-green-light/20 to-vet-green/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-        </button>
+        </a>
       </div>
 
 
@@ -59,10 +59,4 @@
   </div>
 </section>
 
-<script>
-  // Add click handler for booking button
-  document.getElementById('booking-button')?.addEventListener('click', function() {
-    // Placeholder for Calendly integration
-    alert('Hier wird später die Calendly-Integration eingebunden!');
-  });
-</script>
+

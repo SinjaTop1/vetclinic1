@@ -60,7 +60,15 @@ const translations = {
     'contact-cta-btn': 'Online Termin buchen',
     
     // Footer
-    'footer-services-title': 'Unsere Leistungen'
+    'footer-services-title': 'Unsere Leistungen',
+    
+    // Booking Page
+    'booking-title': 'Online Termin buchen',
+    'booking-subtitle': 'Wählen Sie einen passenden Termin für Ihren Liebling. Wir freuen uns auf Ihren Besuch!',
+    'booking-select-time': 'Wählen Sie Ihren Wunschtermin',
+    'booking-instructions': 'Klicken Sie auf einen verfügbaren Zeitslot, um Ihren Termin zu buchen.',
+    'booking-contact-title': 'Fragen zum Termin?',
+    'booking-contact-subtitle': 'Kontaktieren Sie uns gerne direkt'
   },
   en: {
     // Navigation
@@ -122,7 +130,15 @@ const translations = {
     'contact-cta-btn': 'Book Online Appointment',
     
     // Footer
-    'footer-services-title': 'Our Services'
+    'footer-services-title': 'Our Services',
+    
+    // Booking Page
+    'booking-title': 'Book Online Appointment',
+    'booking-subtitle': 'Choose a suitable appointment for your pet. We look forward to your visit!',
+    'booking-select-time': 'Select Your Preferred Time',
+    'booking-instructions': 'Click on an available time slot to book your appointment.',
+    'booking-contact-title': 'Questions About Your Appointment?',
+    'booking-contact-subtitle': 'Feel free to contact us directly'
   }
 };
 
